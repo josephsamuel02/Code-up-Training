@@ -3,13 +3,14 @@ import { MdArrowBack, MdKeyboardBackspace } from "react-icons/md";
 const ApplicationForm = () => {
   return (
     <>
-      <div className="w-full h-auto flex flex-row items-center scrollbar-hide bg-violet-500 bg-opacity-5 backdrop-blur-sm">
+      <div className=" p-1 pt-32 bg-white bg-opacity-25 backdrop-blur-md scrollbar-hide rounded-lg border border-gray-200  overflow-y-scroll  scrollbar-hide">
         <div
-          className="py-3 fixed top-20 left-6 md:left-72 flex flx-row cursor-pointer"
+          className="py-6 absolute top-16  left-6 md:left-72 flex flx-row cursor-pointer"
           onClick={() => window.location.reload()}
+          id="form"
         >
           <MdKeyboardBackspace size={30} color="black" />
-          <h2 className=" mx-auto px-3 text-lg font-bold">Go back</h2>
+          <h2 className=" mx-auto px-3 text-lg font-bold">Back</h2>
         </div>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLScf29eWs_4-Vaj27QCVwlpEG6MbV8hhi5x1J7K_UNNgvIkpLg/viewform?embedded=true"
@@ -18,7 +19,7 @@ const ApplicationForm = () => {
           // frameborder="0"
           // marginheight="0"
           // marginwidth="0"
-          className=" mx-auto p-1 pt-10 md:p-6 mt-32 bg-white scrollbar-hide rounded-lg border border-gray-200"
+          className=" mx-auto p-1    bg-transparent   rounded-lg border border-gray-200    scrollbar-hide"
         >
           Loading…
         </iframe>
@@ -28,7 +29,7 @@ const ApplicationForm = () => {
         onClick={() => window.location.reload()}
       >
         <MdKeyboardBackspace size={30} color="black" />
-        <h2 className=" mx-1 px-3 text-lg font-bold">Go back</h2>
+        <h2 className=" mx-1 px-3 text-lg font-bold">Back</h2>
       </div>
     </>
   );

@@ -8,17 +8,19 @@ const LandingPageDashBoard = (param: {
       <div className="w-full h-screen mx-auto mt-3 md:mt-10  flex flex-col md:flex-row">
         <div className=" left w-full md:w-3/5 h-auto mt-12  md:h-auto mx-0 py-0 items-center flex flex-row">
           <div className="mx-auto mt-8 md:mt-20 px-6 py-12 w-full my-auto">
-            <h1 className=" p-0 md:p-3 text-black mx-auto md:m-0 font-bold md:text-left text-left text-5xl md:text-6xl ">
-              <span className="   text-indigo-700  "> CodeJets'</span> <br />
+            <h1 className=" mx-auto  md:m-0 mb-2 font-bold   text-left text-5xl md:text-6xl   text-indigo-700  ">
+              CodeJets'
+            </h1>
+            <br />
+            <h1 className=" p-0 md:p-3 text-black mx-auto md:m-0 font-bold   text-left text-5xl md:text-6xl ">
               Web Development
             </h1>
-            <h1 className="p-3 pl-2 text-indigo-700 m-0 mt-6 md:mt-0 font-bold md:text-left text-left  text-4xl md:text-6xl ">
+            <h1 className="  pl-2 text-indigo-700 m-0 mt-3 md:mt-0 font-bold   text-left  text-4xl md:text-6xl ">
               Training Classes
             </h1>
             <p className="p-3 my-12 text-2xl md:text-3xl text-gray-900  font-base ">
               Unlock Your Potential: Enroll in Our Dynamic Web Development Training Today!
             </p>
-
             <a
               // href={ROUTES.APPLY}
               onClick={() => setShowForm(true)}

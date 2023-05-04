@@ -1,7 +1,8 @@
-import { useState } from "react";
-import ROUTES from "../public.routes";
+const LandingPageDashBoard = (param: {
+  setShowForm: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  const { setShowForm } = param;
 
-const LandingPageDashBoard = () => {
   return (
     <div id="home" className=" w-full">
       <div className="w-full h-screen mx-auto mt-10  flex flex-col md:flex-row">
@@ -18,7 +19,8 @@ const LandingPageDashBoard = () => {
             </p>
 
             <a
-              href={ROUTES.APPLY}
+              // href={ROUTES.APPLY}
+              onClick={() => setShowForm(true)}
               className=" mx-3 md:mx-6 mt-16 py-4 px-12 bg-indigo-700  transition-all hover:bg-gradient-to-r from-violet-700 rounded-lg text-2xl text-white  font-md"
             >
               Apply now

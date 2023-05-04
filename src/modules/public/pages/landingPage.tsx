@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import LandingPageDashBoard from "../components/landing.page.dashBoard";
 import Features from "../components/features";
 import Stack from "../components/stack";
@@ -7,16 +6,25 @@ import About from "../components/about";
 import { SiWhatsapp } from "react-icons/si";
 import URLS from "../../../url.links/urls";
 import Manifesto from "../components/Manifesto";
+import { useState } from "react";
+import ApplicationForm from "../components/applicationForm";
 const LandingPage = () => {
+  const [showForm, setShowForm] = useState<boolean>(false);
+
   return (
     <>
-      <LandingPageDashBoard />
-      <Manifesto />
-      <Features />
-      <About />
-      <Stack />
-      <Footer />
+      {!showForm && (
+        <>
+          <LandingPageDashBoard setShowForm={setShowForm} />
+          <Manifesto setShowForm={setShowForm} />
+          <Features />
+          <About setShowForm={setShowForm} />
+          <Stack />
+        </>
+      )}
+      {showForm && <ApplicationForm />}
 
+      <Footer />
       <a
         href={URLS.WHATSAPP}
         target="_blank"

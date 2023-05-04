@@ -1,6 +1,7 @@
 import ROUTES from "../public.routes";
 
-const Manifesto = () => {
+const Manifesto = (param: { setShowForm: React.Dispatch<React.SetStateAction<boolean>> }) => {
+  const { setShowForm } = param;
   return (
     <>
       <div className="mx-auto mt-72 mb-32 pt-52 pb-10 md:py-28 w-full h-auto flex flex-row  my-6 px-6 bg-Codephoto bg-cover bg-no-repeat ">
@@ -17,7 +18,7 @@ const Manifesto = () => {
         <div className="right w-0 md:w-1/2 m-auto h-auto item-right "></div>
       </div>
       <a
-        href={ROUTES.APPLY}
+        onClick={() => setShowForm(true)}
         className=" mx-6 mt-3 py-4 px-12 bg-indigo-700  transition-all hover:bg-gradient-to-r from-violet-700 rounded-md text-2xl text-white  font-md"
       >
         Register now

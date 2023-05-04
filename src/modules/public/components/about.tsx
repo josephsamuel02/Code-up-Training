@@ -1,7 +1,8 @@
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import ROUTES from "../public.routes";
 
-const About = () => {
+const About = (param: { setShowForm: React.Dispatch<React.SetStateAction<boolean>> }) => {
+  const { setShowForm } = param;
   return (
     <>
       <div id="about" className=" max-w-full mx-0 my-6 px-3 py-3 items-center">
@@ -28,7 +29,7 @@ const About = () => {
         </div>
       </div>
       <a
-        href={ROUTES.APPLY}
+        onClick={() => setShowForm(true)}
         className="mx-auto ml-10 mt-72 w-auto md:w-56 text-center py-3 px-8 bg-indigo-700 transition-all hover:bg-gradient-to-r from-blue-600 rounded text-xl text-white  font-md cursor-pointer"
       >
         Get Started

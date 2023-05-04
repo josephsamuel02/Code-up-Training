@@ -7,7 +7,7 @@ const LandingPageDashBoard = (param: {
     <div id="home" className=" w-full">
       <div className="w-full h-screen mx-auto mt-3 md:mt-10  flex flex-col md:flex-row">
         <div className=" left w-full md:w-3/5 h-auto mt-12  md:h-auto mx-0 py-0 items-center flex flex-row">
-          <div className="mx-auto mt-8 md:mt-20 px-6 py-12 w-full my-auto">
+          <div className="mx-auto mt-2 md:mt-20 px-6 py-12 w-full my-auto">
             <h1 className=" mx-auto  md:m-0 mb-2 font-bold   text-left text-5xl md:text-6xl   text-indigo-700  ">
               CodeJets'
             </h1>

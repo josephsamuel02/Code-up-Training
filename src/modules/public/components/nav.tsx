@@ -23,7 +23,6 @@ const Nav = () => {
                 key={i}
                 className="mx-1 px-6 tex-center text-indigo-700 hover:text-blue-700 text-lg font-bold"
                 href={"#"}
-                onClick={() => setShowContactCard(true)}
               >
                 {item.name}
               </a>
@@ -67,7 +66,6 @@ const Nav = () => {
                   className="mx-auto px-6 py-2 tex-center text-indigo-700 text-lg font-bold font-roboto rounded hover:text-black hover:bg-gradient-to-t from-indigo-200 transition-all "
                   href={"#"}
                   onClick={() => {
-                    //   setShowContactCard(true);
                     setShowNav(false);
                   }}
                 >

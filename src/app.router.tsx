@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import Nav from "./modules/public/components/nav";
 import LandingPage from "./modules/public/pages/landingPage";
 import ROUTES from "./modules/public/public.routes";
-import ApplicationForm from "./modules/public/components/applicationForm";
 const Router = () => {
   return (
     <>
@@ -10,7 +9,6 @@ const Router = () => {
 
       <Routes>
         <Route path={ROUTES.HOME} element={<LandingPage />} />
-        <Route path={ROUTES.APPLY} element={<ApplicationForm />} />
         <Route
           path={"*"}
           element={

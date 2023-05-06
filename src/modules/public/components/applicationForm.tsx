@@ -1,12 +1,15 @@
 import { MdArrowBack, MdKeyboardBackspace } from "react-icons/md";
 
-const ApplicationForm = () => {
+const ApplicationForm = (param: {
+  setShowForm: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  const { setShowForm } = param;
   return (
     <>
       <div className=" p-1 pt-32 bg-white bg-opacity-25 backdrop-blur-md scrollbar-hide rounded-lg border border-gray-200  overflow-y-scroll  scrollbar-hide">
         <div
           className="py-6 absolute top-16  left-6 md:left-72 flex flx-row cursor-pointer"
-          onClick={() => window.location.reload()}
+          onClick={() => setShowForm(false)}
           id="form"
         >
           <MdKeyboardBackspace size={30} color="black" />
@@ -26,7 +29,7 @@ const ApplicationForm = () => {
       </div>
       <div
         className="py-3 ml-6 md:ml-20   flex flx-row cursor-pointer"
-        onClick={() => window.location.reload()}
+        onClick={() => setShowForm(false)}
       >
         <MdKeyboardBackspace size={30} color="black" />
         <h2 className=" mx-1 px-3 text-lg font-bold">Back</h2>

@@ -20,11 +20,11 @@ const LandingPage = () => {
           <Features />
           <About setShowForm={setShowForm} />
           <Stack />
+          <Footer />
         </>
       )}
       {showForm && <ApplicationForm setShowForm={setShowForm} />}
 
-      <Footer />
       <a
         href={URLS.WHATSAPP}
         target="_blank"

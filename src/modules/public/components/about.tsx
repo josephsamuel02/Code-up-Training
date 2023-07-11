@@ -29,7 +29,8 @@ const About = (param: { setShowForm: React.Dispatch<React.SetStateAction<boolean
         </div>
       </div>
       <a
-        onClick={() => setShowForm(true)}
+        href={ROUTES.APPLY}
+        // onClick={() => setShowForm(true)}
         className="mx-auto ml-10 mt-72 w-auto md:w-56 text-center py-3 px-8 bg-indigo-700 transition-all hover:bg-gradient-to-r from-blue-600 rounded text-xl text-white  font-md cursor-pointer"
       >
         Get Started

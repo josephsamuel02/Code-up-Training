@@ -18,7 +18,8 @@ const Manifesto = (param: { setShowForm: React.Dispatch<React.SetStateAction<boo
         <div className="right w-0 md:w-1/2 m-auto h-auto item-right "></div>
       </div>
       <a
-        onClick={() => setShowForm(true)}
+        href={ROUTES.APPLY}
+        // onClick={() => setShowForm(true)}
         className=" mx-6 mt-3 py-4 px-12 bg-indigo-700  transition-all hover:bg-gradient-to-r from-violet-700 rounded-md text-2xl text-white  font-md"
       >
         Register now
